@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/main_title_LL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mini Game Heaven"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_start_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/main_title_LL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="50dp"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/main_start_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Game"
+            android:textSize="20sp"
+            android:layout_marginBottom="40dp"
+
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/main_rank_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rank"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
