@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.minigame"
-        minSdk 19
+        minSdk 30
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -35,9 +35,17 @@ android {
     buildFeatures {
         viewBinding true
     }
+    sourceSets {
+        main {
+            jni {
+                srcDirs 'src/main/jni', 'src/main/jniLibs'
+            }
+        }
+    }
 }
 
 dependencies {
+    implementation project(path: ':opencvlib')
     def fragment_version = "1.5.4"
 
     // Java language implementation
