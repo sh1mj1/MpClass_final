@@ -54,7 +54,6 @@ android {
 
 dependencies {
     // Dependency on a local library module
-    implementation project(path: ':opencvlib')
 
     // Dependency on local binaries
     implementation fileTree(dir: 'libs', include: ['*.jar'])

@@ -14,4 +14,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "minigame"
 include ':app'
-include ':opencvlib'
